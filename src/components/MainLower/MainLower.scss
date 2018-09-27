@@ -1,0 +1,14 @@
+@import 'src/assets/styles/base/baseExport';
+
+.mainLower {
+    background: red;
+    font-size: 9pt;
+    font-weight: bold;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+}
+
+// .buttonSmall {
+//     color: $blue;
+// }
