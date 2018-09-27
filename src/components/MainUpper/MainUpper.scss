@@ -1,0 +1,24 @@
+@import 'src/assets/styles/base/baseExport';
+
+.mainUpper {
+    background: $graylight;
+    font-family: 'Graphik', sans-serif;
+    font-size: 14pt;
+    font-weight: bold;
+    margin-bottom: 15px;
+    // margin-left: 25%;
+    // margin-right: 25%;
+    padding: 15px;
+    width: 500px;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+
+    
+}
+
+.inputLabel {
+    font-size: 10pt;
+    font-weight: normal;
+    margin-top: 5px;
+}

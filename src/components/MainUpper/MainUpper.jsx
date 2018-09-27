@@ -1,8 +1,8 @@
 import React from 'react';
-import styles from './FormBox.scss';
+import styles from './MainUpper.scss';
 
-const FormBox = () => (
-    <div data-test-hook="FormBoxElement" className={styles.formBox}>
+const FormWrapper = () => (
+    <div data-test-hook="FormWrapper" className={styles.mainUpper}>
       Create New Account
       <p className={styles.inputLabel}>Account Email</p>
       <p className={styles.inputLabel}>Password</p>
@@ -11,4 +11,4 @@ const FormBox = () => (
     </div>
   );
 
-export default FormBox;
+export default FormWrapper;

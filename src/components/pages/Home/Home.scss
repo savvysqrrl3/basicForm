@@ -2,4 +2,8 @@
 
 .home {
   background: $graydark;
+  display: flex;
+	flex-direction: column;
+  justify-content: center;
+  align-self: center;
 }
