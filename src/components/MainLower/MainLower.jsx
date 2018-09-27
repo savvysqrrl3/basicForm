@@ -3,7 +3,8 @@ import styles from './MainLower.scss';
 
 const SignIn = () => (
     <div className={styles.mainLower}>
-        Already have an account?  
+        Already have an account? 
+       <button className={styles.buttonSmall}>Sign In</button>
     </div>
   );
 

@@ -1,14 +1,31 @@
 @import 'src/assets/styles/base/baseExport';
 
 .mainLower {
-    background: red;
+    background: $graylight;
     font-size: 9pt;
     font-weight: bold;
     display: flex;
     align-self: center;
-    flex-direction: column;
+    margin-bottom: 15px;
+    padding: 25px;
+    width: 400px;
+    align-items: center;
+    justify-content: center;
 }
 
-// .buttonSmall {
-//     color: $blue;
-// }
+.buttonSmall {
+    background-color: $blue;
+    color: $white;
+    border: none;
+    border-radius: 2px;
+    font-size: 10pt;
+    font-weight: bold;
+    width: 100px;
+    height: 30px;
+    margin-left: 15px;
+}
+
+.contentAlign {
+    // display: inline-block;
+    align-items: center;
+}
