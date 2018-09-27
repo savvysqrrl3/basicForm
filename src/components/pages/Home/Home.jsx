@@ -1,9 +1,9 @@
 import React from 'react';
 import Header from '../../Header';
-// import FormBox from '../../Register';
-// import SignInBox from '../../Login';
 import Footer from '../../Footer';
-import SampleComponent from '../../SampleComponent';
+import FormBox from '../../FormBox';
+import SignInBox from '../../SignInBox';
+
 
 import styles from './Home.scss';
 
