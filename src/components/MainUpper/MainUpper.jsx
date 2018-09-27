@@ -8,6 +8,7 @@ const FormWrapper = () => (
       <p className={styles.inputLabel}>Password</p>
       <p className={styles.inputLabel}>Verify Password</p>
       <p className={styles.inputLabel}>Terms and Conditions</p>
+      <button className={styles.buttonLarge}>Sign In</button>
     </div>
   );
 
