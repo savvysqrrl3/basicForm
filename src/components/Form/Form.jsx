@@ -9,6 +9,7 @@ class Form extends React.Component {
             password: '',
             verify: '',
             terms: false,
+            successMessage: '',
         };
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -16,12 +17,17 @@ class Form extends React.Component {
 
     handleChange({target}) {
         this.setState({[target.name]: target.value});
-    }
+    }  
     
     handleSubmit(event) {
-        // make submit button turn green and clear input fields
-        // prevent submit if text is empty
         event.preventDefault();
+        this.setState({
+            email: '',
+            password: '',
+            verify: '',
+            terms: false,
+            successMessage: 'Thank you for registering'
+        })
     }
 
     render(){
@@ -35,7 +41,7 @@ class Form extends React.Component {
                 />
                 <p className={styles.inputLabel}>Password</p>
                 <input 
-                    type="text" 
+                    type="password" 
                     name='password' 
                     className={styles.inputField} 
                     value={this.state.password} 
@@ -43,7 +49,7 @@ class Form extends React.Component {
                 />
                 <p className={styles.inputLabel}>Verify Password</p>
                 <input 
-                    type="text" 
+                    type="password" 
                     name='verify' 
                     className={styles.inputField} 
                     value={this.state.verify} 
@@ -58,10 +64,12 @@ class Form extends React.Component {
                     />
                     Terms and Conditions
                 </p>
+                <div className={styles.success}>                       {this.state.successMessage}
+                </div>
                 <input 
-                    type="submit" 
+                    type="submit"
                     className={styles.buttonLarge} 
-                    value="Sign In" 
+                    value="Sign In"
                 />
             </form>
         );
